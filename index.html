@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orion band</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato|New+Rocker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>ORION BAND</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tickets">Tickets</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="hero">
+        <h1>THE BEST BAND OF THE WORLD!</h1>
+        <a class="btn" href="#">READ MORE</a>
+    </section>
+
+    <section id="about" class="about">
+        <h3>about the band</h3>
+        <p>Born in New York, the Orion Band was formed in 2016 and achieved success on its second album entitled "THE WALK". The tour of the new album has already toured the entire USA and is now arriving in Europe.</p>
+        <hr>
+
+        <div class="about-images">            
+            <div class="about-images-item"><img src="img/concert-1.jpg"> 
+                <p class="over">New york</p>
+            </div>
+
+            <div class="about-images-item"><img src="img/concert-2.jpg"> 
+                <p class="over">Philadelphia</p>
+            </div>
+
+            <div class="about-images-item"><img src="img/concert-3.jpg"> 
+                <p class="over">Dallas</p>
+            </div>
+
+            <div class="about-images-item"><img src="img/concert-4.jpg"> 
+                <p class="over">Baltimore</p>
+            </div>
+
+            <div class="about-images-item"><img src="img/concert-5.jpg"> 
+                <p class="over">San Diego</p>
+            </div>
+
+            <div class="about-images-item"><img src="img/concert-6.jpg"> 
+                <p class="over">Los Angeles</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tickets" class="buy-tickets">
+            
+            <h3>BUY TICKETS</h3>
+            <p>Get tickets to watch the tour in Europe.</p>
+            <hr>
+
+            <ul class="tickets">
+                <li>
+                    <img src="img/london.jpg" alt="">
+                    <h2>London</h2>
+                    <p>Purchase tickets for the London show to be held at the O2 Arena.</p>
+                    <a id="open-modal-one" class="bouyt" href="">Buy Ticket</a>
+                </li>
+
+                <li>
+                    <img src="img/paris.jpg" alt="">
+                    <h2>Paris</h2>
+                    <p>Purchase tickets for the Paris show to be held at the AccorHotels Arena.</p>
+                    <a id="open-modal-two" class="bouyt" href="">Buy Ticket</a>
+                </li>
+
+                <li>
+                    <img src="img/amsterdam.jpg" alt="">
+                    <h2>Amsterdam</h2>
+                    <p>Purchase tickets for the Amsterdam show to be held at the Hotel NH Collection.</p>
+                    <a id="open-modal-tree" class="bouyt" href="">Buy Ticket</a>
+                </li>
+            </ul>
+    </section>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>BUY TICKETS</h2>
+          </div>
+
+          <div class="modal-body">
+            
+            <div class="row">
+                <div class="col-75">
+                  <div class="container">
+                    <form>
+              
+                      <div class="row">
+                        <div class="col-50">
+                          <h3>Billing Address</h3>
+                          <label for="fname">Full Name</label>
+                          <input type="text" id="fname" name="firstname" placeholder="Igor Bomfim">
+                          <label for="email">Email</label>
+                          <input type="text" id="email" name="email" placeholder="igorbomfim2705@gmail.com">
+                          <label for="adr">Address</label>
+                          <input type="text" id="adr" name="address" placeholder="Street">
+                          <label for="city"></i> City</label>
+                          <input type="text" id="city" name="city" placeholder="New York">
+              
+                          <div class="row">
+                            <div class="col-50">
+                              <label for="state">State</label>
+                              <input type="text" id="state" name="state" placeholder="NY">
+                            </div>
+                            <div class="col-50">
+                              <label for="zip">Zip</label>
+                              <input type="text" id="zip" name="zip" placeholder="00000">
+                            </div>
+                          </div>
+                        </div>
+              
+                        <div class="col-50">
+                          <h3>Payment</h3>
+                          <label for="fname">Accepted Cards</label>
+                          <div class="icon-container">
+                            <i class="fab fa-cc-visa" style="color:navy;"></i>
+                            <i class="fab fa-cc-paypal" style="color:blue;"></i>
+                            <i class="fab fa-cc-mastercard" style="color:red;"></i>
+                          </div>
+                          <label for="cname">Name on Card</label>
+                          <input type="text" id="cname" name="cardname" placeholder="Igor Bomfim">
+                          <label for="ccnum">Credit card number</label>
+                          <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                          <label for="expmonth">Exp Month</label>
+                          <input type="text" id="expmonth" name="expmonth" placeholder="January">
+              
+                          <div class="row">
+                            <div class="col-50">
+                              <label for="expyear">Exp Year</label>
+                              <input type="text" id="expyear" name="expyear" placeholder="2020">
+                            </div>
+                            <div class="col-50">
+                              <label for="cvv">CVV</label>
+                              <input type="text" id="cvv" name="cvv" placeholder="123">
+                            </div>
+                          </div>
+                        </div>
+              
+                      </div>
+
+                      <input type="submit" value="Continue to checkout" class="btn-modal">
+                    </form>
+                  </div>
+                </div>
+              </div> 
+
+
+          </div>
+        </div>
+      
+    </div>
+
+    <section id="newsletter" class="newsletter ">
+        <h3>Newsletter</h3>
+        <p>Receive information about upcoming Orion Band shows across Europe, and get up to date on dates, prices and discounts.</p>
+        <hr>
+
+        <form>
+            <input type="text" name="text" placeholder="Enter your email">
+            <button> Register </button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <ul>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        <p>&copy; All rights reserved - Igor Bomfim 2020</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
